@@ -5,7 +5,8 @@ import 'view/cronometromodel.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await NotificacaoService().init();
+  final notificationService = NotificationService();
+  await notificationService.initialize();
   runApp(CronometroApp());
 }
 
